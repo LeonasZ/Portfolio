@@ -1,0 +1,244 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Leonas Zidonis</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/09cb433767.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+
+        <div class="container">
+            <nav>
+                <img src="imagenes/logochico.jpg" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Developer</p>
+                <h1>Hi, I'm <span>Leonas Zidonis</span> <br>from Argentina</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ABOUT -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="imagenes/altearecgris.png" alt="fotosol">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+
+                    <p>Leonas is a passionate programming student with experience in developing personal projects in
+                        various areas, including games, .NET applications, and web development. He is eager to find new
+                        opportunities that allow him to be continuously growing and expanding his knowledge and skills.
+                        He has a solid base on programming concepts and algorithms, also has a good creativity for
+                        problem solving. He possesses a high degree of flexibility, enabling him to effectively perform
+                        under pressure. He has a friendly temperament and likes to work with a team. Additionally, he is
+                        available for travel, further showcasing his adaptability and openness to new challenges.
+                        Leonas possesses an unwavering drive to secure his first job and embark on a journey of
+                        continuous growth. Despite lacking prior work experience in IT, he is determined to excel and
+                        contribute to the tech industry through his passion for learning and dedication to personal
+                        development. </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Proficient in</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Backend development</span><br>Building apps with C# - .NET - SQL</li>
+                            <li><span>VideoGame development</span><br>VideoGame development with C++</li>
+                            <li><span>Web development</span><br>Web app development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - 2022</span><br>App to manage a store with C# .NET and SQL</li>
+                            <li><span>2021 - 2022</span><br>"ExtraTerra" VideoGame builded with C++ using SFML library
+                            </li>
+                            <li><span>2021 - 2021</span><br>"Gran Cerdo" VideoGame builded with C++</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - Current</span><br>Technician in Programming <i>(Universidad Tecnológica
+                                    Nacional U.T.N.</i></i>)</li>
+                            <li><span>2022 - 2022</span><br>Cibersecurity (<i>course by Fundación Telefónica
+                                    Movistar</i>)</li>
+                            <li><span>2021 - 2021</span><br>Web Development (<i>by Platzi</i>)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>.NET Application Development:</h2>
+                    <p>I am very interested in delving into the world of application development using .NET
+                        technologies. My enthusiasm and dedication drive me to learn and develop skills in C# and .NET
+                        so that I can offer customized solutions in the future. </p>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Frontend Web Development</h2>
+                    <p>I am committed to learning and perfecting my skills in JavaScript, HTML5, and CSS to create
+                        attractive and functional user interfaces that meet the needs of clients. </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-gamepad"></i>
+                    <h2>Video Game Development</h2>
+                    <p>I am willing to dedicate time and effort to learn about game development and work on small
+                        projects to gain experience and knowledge in this exciting field.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="imagenes/menuextraterra.png">
+                    <div class="layer">
+                        <h3>ExtraTerra - VideoGame</h3>
+                        <p>It is a game developed with C++ and the SFML library, including the basics of programming
+                            such as OOP, inheritance, polymorphism, encapsulation, modularity, abstraction, etc.</p>
+                        <a href="https://github.com/LeonasZ/ExtraTerra#readme"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="imagenes/winform.png">
+                    <div class="layer">
+                        <h3>Store Managment with C# Winforms</h3>
+                        <p>This application enables the management of products in a commerce catalog in a generic
+                            manner, suitable for any type of business. The stored information is used to display
+                            products on websites, online stores, mobile apps, magazines, and other mediums. In essence,
+                            it centralizes the administration and distribution of product details across multiple
+                            channels.</p>
+                        <a href="https://github.com/Alejochavarri/tp-winform-equipo-14"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="imagenes/Grancerdo.png">
+                    <div class="layer">
+                        <h3>Gran Cerdo - VideoGame</h3>
+                        <p>"Gran Cerdo" is a two-player dice game involving chance and greed. The overall objective of
+                            the game is to accumulate the highest amount of victory points over a total of 5 rounds.</p>
+                        <a href="https://github.com/LeonasZ/GRAN-CERDO-Game"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="https://github.com/LeonasZ" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>leitozidonis@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/leonaszidonis/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/LeonasZ"><i class="fab fa-github"></i></a>
+
+                    </div>
+                    <a href="imagenes/ENG - Leonas Zidonis.pdf" download class="btn btn2">Download CV</a>
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+
+                </div>
+            </div>
+        </div>
+        <!-- copyright -->
+        <div class="copyright">
+            <p>Copyright © Leonas</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyp2dC-PKuqJlEELmw8hP0FFXOuAO9WRQk9AqDh29YBMWYc42hrZg9MBK5Qt00kMgAi/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully!"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
